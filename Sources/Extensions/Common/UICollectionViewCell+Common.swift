@@ -2,6 +2,8 @@
 // UICollectionViewCell+Common.swift
 //
 
+#if os(iOS)
+
 import UIKit
 
 public extension UICollectionViewCell {
@@ -12,3 +14,5 @@ public extension UICollectionViewCell {
         return String(describing: self)
     }
 }
+
+#endif

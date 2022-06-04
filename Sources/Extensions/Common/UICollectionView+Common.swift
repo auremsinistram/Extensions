@@ -2,6 +2,8 @@
 // UICollectionView+Common.swift
 //
 
+#if os(iOS)
+
 import UIKit
 
 public extension UICollectionView {
@@ -18,3 +20,5 @@ public extension UICollectionView {
         register(myClass, forCellWithReuseIdentifier: myClass.reuseIdentifier)
     }
 }
+
+#endif

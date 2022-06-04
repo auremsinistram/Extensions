@@ -2,6 +2,8 @@
 // UIViewController+Common.swift
 //
 
+#if os(iOS)
+
 import UIKit
 
 public extension UIViewController {
@@ -12,3 +14,5 @@ public extension UIViewController {
         return UIStoryboard(name: String(describing: self), bundle: nil).instantiateInitialViewController() as! Self
     }
 }
+
+#endif

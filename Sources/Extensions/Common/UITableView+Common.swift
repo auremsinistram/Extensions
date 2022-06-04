@@ -2,6 +2,8 @@
 // UITableView+Common.swift
 //
 
+#if os(iOS)
+
 import UIKit
 
 public extension UITableView {
@@ -18,3 +20,5 @@ public extension UITableView {
         register(myClass, forCellReuseIdentifier: myClass.reuseIdentifier)
     }
 }
+
+#endif

@@ -2,6 +2,8 @@
 // UITableViewCell+Common.swift
 //
 
+#if os(iOS)
+
 import UIKit
 
 public extension UITableViewCell {
@@ -12,3 +14,5 @@ public extension UITableViewCell {
         return String(describing: self)
     }
 }
+
+#endif
